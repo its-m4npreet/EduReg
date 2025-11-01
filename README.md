@@ -2,7 +2,7 @@
 
 EduReg is a lightweight student registration web app built with plain PHP, HTML, CSS and minimal JavaScript. It stores student submissions via server-side scripts (see `process.php`) and provides a view page (`view.php`) to list saved students.
 
-This README explains how to run the project locally using XAMPP, the project structure, quick usage notes, and simple customization tips.
+This README file explains how to run the project locally using XAMPP, the project structure, quick usage notes, and simple customization tips.
 
 ## Features
 
