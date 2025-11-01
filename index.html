@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduReg - Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EduReg</h1>
+        <p class="tagline">Smart Student Registration System</p>
+
+        <form id="regForm" action="process.php" method="POST" onsubmit="return validateForm()">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="16" max="100" required>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Mathematics">DBMS</option>
+                <option value="Physics">Web Technology</option>
+                <option value="Chemistry">Software Engineering</option>
+                <option value="Biology">Ai</option>
+            </select>
+
+            <button type="submit">Register Student</button>
+        </form>
+
+        <div id="message"></div>
+        <p style="text-align:center; margin-top:20px;">
+            <a href="view.php" class="btn">View All Students</a>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
